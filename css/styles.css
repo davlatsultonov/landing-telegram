@@ -180,6 +180,10 @@ ul {
     margin:  auto;
 }
 
+.form__input-field {
+    position: relative;
+}
+
 .form__input, .form__btn {
     border-radius: 25px
 }
@@ -219,6 +223,10 @@ ul {
     letter-spacing: normal;
     line-height: 24px;
     text-align: center;
+}
+
+.form__input.error {
+    border-color: red;
 }
 
 .form__btn {
@@ -274,6 +282,27 @@ ul {
     letter-spacing: 0.2px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.error_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 25.875rem;
+}
+
+.error_alert {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: red;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    right: 1rem;
+    bottom: 8px;
+    padding: 4px 3px 2px;
+    line-height: 6px;
+    border-radius: 1px;
+    border: 1px solid red;
 }
 
 @media (max-width: 1280px) {
